@@ -1,0 +1,7 @@
+work_dir: ${hydra:runtime.cwd}
+data_dir: ${work_dir}\Images\
+
+dataset:
+  path: 'Images/'
+  train_test_split: 0.2
+  custom_random_seed: 101

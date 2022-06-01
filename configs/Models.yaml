@@ -1,0 +1,32 @@
+
+
+models:
+  model: 'vgg19'
+#  model: 'Xception'
+#  model: 'InceptionV3'
+#  model: 'ResNet152'
+
+pretrained: True
+cuda_enable: True
+
+
+
+TRAIN:
+  weights: 'imagenet'
+  pool_size: 5
+  learning_rate: 1e-3
+  train_batch_size: 64
+  loss: 'categorical_crossentropy'
+  is_cuda: 1
+  epoch: 30
+  keep_prob: 0.2
+
+activation:
+  relu: 'relu'
+  softmax: 'softmax'
+
+TEST:
+  test_batch_size: 64
+
+
+
